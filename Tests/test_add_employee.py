@@ -212,8 +212,6 @@ class AddNewTest(unittest.TestCase):
         self.assertEqual("Should have at least 8 characters", self.add_employee.get_message_invalid_password())
 
     def test_wrong_confirmPassword(self):
-        # self.driver.refresh()
-
         if not self.add_employee.get_status_checked_checkbox():
             self.add_employee.click_checkbox()
 
